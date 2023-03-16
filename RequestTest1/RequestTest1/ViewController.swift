@@ -17,14 +17,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupRequest()
         setupTableView()
+        setupRequest()
     }
     
     func setupRequest() {
         AF.request("https://p3teufi0k9.execute-api.us-east-1.amazonaws.com/v1/pizza", method:.get).response { response in
             let pizza = try? JSONDecoder().decode(Pizza.self, from: response.data ?? Data())
             self.arrayPizza = pizza
+            self.myTableView.reloadData()
         }
     }
     
@@ -46,5 +47,13 @@ extension ViewController: UITableViewDataSource {
            return cell
         }
         return UITableViewCell()
+    }
+}
+
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let myScreen = storyboard?.instantiateViewController(withIdentifier: "secondScreen") {
+            self.navigationController?.pushViewController(myScreen, animated: true)
+        }
     }
 }
