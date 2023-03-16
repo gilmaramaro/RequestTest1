@@ -43,9 +43,9 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? MyTableViewCell {
-           cell.setupCell(pizzaElement: self.arrayPizza?[indexPath.row])
-           return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? MyTableViewCell {
+            cell.setupCell(pizzaElement: self.arrayPizza?[indexPath.row])
+            return cell
         }
         return UITableViewCell()
     }
