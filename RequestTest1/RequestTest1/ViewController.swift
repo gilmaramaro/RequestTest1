@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var myTableView: UITableView!
     
-    var arrayPizza: Pizza?
+    var arrayPizza: [PizzaElement]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +31,7 @@ class ViewController: UIViewController {
     
     func setupTableView() {
         myTableView.dataSource = self
+        myTableView.delegate = self
         let UINIB = UINib(nibName: "MyTableViewCell", bundle: nil)
         myTableView.register(UINIB, forCellReuseIdentifier: "Cell")
     }
@@ -52,7 +53,8 @@ extension ViewController: UITableViewDataSource {
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let myScreen = storyboard?.instantiateViewController(withIdentifier: "secondScreen") {
+        if let myScreen = storyboard?.instantiateViewController(withIdentifier: "secondScreen") as? SecondViewController {
+            myScreen.connectionScreen2 = arrayPizza?[indexPath.row]
             self.navigationController?.pushViewController(myScreen, animated: true)
         }
     }
