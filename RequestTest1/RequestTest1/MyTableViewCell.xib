@@ -16,18 +16,31 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="324"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c9l-uw-kKh">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c9l-uw-kKh">
                         <rect key="frame" x="40" y="33" width="240" height="219"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="219" id="7p7-WL-OCW"/>
+                        </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovd-df-EIn">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovd-df-EIn">
                         <rect key="frame" x="40" y="273" width="240" height="31"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="lFY-kk-Eu3"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="c9l-uw-kKh" secondAttribute="trailing" constant="40" id="Dhk-Sw-ftR"/>
+                    <constraint firstItem="Ovd-df-EIn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="24" id="ca1-hb-V9J"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ovd-df-EIn" secondAttribute="trailing" constant="24" id="lrY-xD-vCV"/>
+                    <constraint firstItem="Ovd-df-EIn" firstAttribute="top" secondItem="c9l-uw-kKh" secondAttribute="bottom" constant="21" id="uN8-d2-ixs"/>
+                    <constraint firstItem="c9l-uw-kKh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="33" id="vCN-mc-QaW"/>
+                    <constraint firstItem="c9l-uw-kKh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="we3-UU-8UK"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>

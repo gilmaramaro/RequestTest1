@@ -30,4 +30,10 @@ class SecondViewController: UIViewController {
         pricePizzaM.text = "Valor Pizza Media: \(connectionScreen2?.priceM ?? 0.0)"
         pricePizzaG.text = "Valor Pizza Grande: \(connectionScreen2?.priceG ?? 0.0)"
     }
+    @IBAction func myButton(_ sender: Any) {
+       if let screenTwo = storyboard?.instantiateViewController(withIdentifier: "screen3") as? ThirdViewController {
+           screenTwo.connectionScreen3 = self.connectionScreen2
+           self.navigationController?.pushViewController(screenTwo, animated: true)
+        }
+    }
 }

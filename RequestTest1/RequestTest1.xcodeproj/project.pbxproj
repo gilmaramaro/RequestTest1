@@ -20,6 +20,8 @@
 		75587CBD29C231100083F451 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75587CBC29C231100083F451 /* Pizza.swift */; };
 		75587CC029C236C40083F451 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75587CBE29C236C40083F451 /* MyTableViewCell.swift */; };
 		75587CC129C236C40083F451 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75587CBF29C236C40083F451 /* MyTableViewCell.xib */; };
+		756423AB29C3917700BE59B2 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756423AA29C3917700BE59B2 /* ThirdViewController.swift */; };
+		756423AD29C3946F00BE59B2 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756423AC29C3946F00BE59B2 /* ModalViewController.swift */; };
 		75839370A3D60E02D8D5F495 /* Pods_RequestTest1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DCA34C019B8A3829285308 /* Pods_RequestTest1Tests.framework */; };
 		7590666229C2BB75004B794E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7590666129C2BB75004B794E /* SecondViewController.swift */; };
 		FD44E0CCDF4B0BD3B5053002 /* Pods_RequestTest1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62FB3DFBBF82903DCA813C3D /* Pods_RequestTest1.framework */; };
@@ -63,6 +65,8 @@
 		75587CBC29C231100083F451 /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
 		75587CBE29C236C40083F451 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		75587CBF29C236C40083F451 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
+		756423AA29C3917700BE59B2 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		756423AC29C3946F00BE59B2 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		7590666129C2BB75004B794E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		88B66F06F61ADB29F7CBF215 /* Pods-RequestTest1-RequestTest1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RequestTest1-RequestTest1UITests.debug.xcconfig"; path = "Target Support Files/Pods-RequestTest1-RequestTest1UITests/Pods-RequestTest1-RequestTest1UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A4DCA34C019B8A3829285308 /* Pods_RequestTest1Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RequestTest1Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +145,8 @@
 				75587C8E29C230430083F451 /* SceneDelegate.swift */,
 				75587C9029C230430083F451 /* ViewController.swift */,
 				75587C9229C230430083F451 /* Main.storyboard */,
+				756423AC29C3946F00BE59B2 /* ModalViewController.swift */,
+				756423AA29C3917700BE59B2 /* ThirdViewController.swift */,
 				7590666129C2BB75004B794E /* SecondViewController.swift */,
 				75587CBE29C236C40083F451 /* MyTableViewCell.swift */,
 				75587CBF29C236C40083F451 /* MyTableViewCell.xib */,
@@ -419,9 +425,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				756423AD29C3946F00BE59B2 /* ModalViewController.swift in Sources */,
 				7590666229C2BB75004B794E /* SecondViewController.swift in Sources */,
 				75587CBD29C231100083F451 /* Pizza.swift in Sources */,
 				75587C9129C230430083F451 /* ViewController.swift in Sources */,
+				756423AB29C3917700BE59B2 /* ThirdViewController.swift in Sources */,
 				75587C8D29C230430083F451 /* AppDelegate.swift in Sources */,
 				75587CC029C236C40083F451 /* MyTableViewCell.swift in Sources */,
 				75587C8F29C230430083F451 /* SceneDelegate.swift in Sources */,
